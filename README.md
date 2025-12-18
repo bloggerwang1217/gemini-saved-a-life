@@ -134,7 +134,7 @@ Gemini 的回應極其精妙：「你正在凝視深淵，但你沒有跳下去�
 
 **分析說明**:
 
-C-SSRS （Columbia-Suicide Severity Rating Scale） 台灣版量表，0-5 分等級：
+C-SSRS （Columbia-Suicide Severity Rating Scale） 台灣版量表（[參考輔仁大學學生輔導中心版本](https://counseling.fju.edu.tw/wp-content/uploads/2021/09/%E8%87%AA%E6%AE%BA%E9%87%8F%E8%A1%A8.pdf)），0-5 分等級：
 - **0 分** = 無自殺意念
 - **1 分** = 消極自殺意念（保護因子 > 危險因子）
 - **2 分** = 積極自殺意念，有方法但可控制
@@ -229,7 +229,7 @@ C-SSRS （Columbia-Suicide Severity Rating Scale） 台灣版量表，0-5 分等
 
 ![DASS-21 情緒分析](analysis/emotions_dass21.png)
 
-**三個獨立子圖**：焦慮、抑鬱、壓力
+**三個獨立子圖**：焦慮、抑鬱、壓力（[DASS-21 繁體中文版來源](https://www.projectc.bokss.org.hk/_files/ugd/c2462d_8ce9390035d54997adfe82f57cfa3a3f.pdf)）
 
 **嚴重度級別色彩編碼**（背景色塊）：
 - 🟩 **綠色** = 0 分（無症狀）
