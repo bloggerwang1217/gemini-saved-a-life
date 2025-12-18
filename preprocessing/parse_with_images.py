@@ -56,15 +56,28 @@ def parse_by_images(elements, start, end):
     """
     Parse conversation using image boundaries
     Pattern: IMAGE -> first text = HUMAN -> remaining texts = GEMINI
+    
+    Note: Excludes non-chat images (e.g., YouTube thumbnails)
     """
     messages = []
     i = start
+    image_counter = 0  # Track image number for filtering
     
     while i < end:
         typ, content, idx = elements[i]
         
         # Find next image
         if typ == 'image':
+            # Check if this is a non-chat image to exclude
+            # Image 005 (6th image, 0-indexed as 5) is YouTube thumbnail at paragraph 102
+            if image_counter == 5:
+                # Skip this image - it's not a chat screenshot
+                i += 1
+                image_counter += 1
+                continue
+            
+            image_counter += 1
+            
             # After image, collect texts until next image
             i += 1
             human_text = None
